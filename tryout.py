@@ -1,7 +1,8 @@
 import torch
 from diffusers import StableDiffusionPipeline, EulerDiscreteScheduler
 
-model_id = "stabilityai/stable-diffusion-2"
+# model_id = "stabilityai/stable-diffusion-2"
+model_id = "stabilityai/stable-diffusion-2-base"
 
 # Use the Euler scheduler here instead
 scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
